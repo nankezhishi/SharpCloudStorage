@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudaryStorage", "CloudaryStorage\CloudaryStorage.csproj", "{F399ED64-C1EB-472D-93EF-ECEF85956D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudaryStorage.Test", "CloudaryStorage.Test\CloudaryStorage.Test.csproj", "{330CD5CD-2E1C-4BD6-8F2A-6C4CB60739D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9017AC77-8C38-4772-9948-08D3E034C2FE}"
+	ProjectSection(SolutionItems) = preProject
+		CloudaryStorage.vsmdi = CloudaryStorage.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CloudaryStorage.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F399ED64-C1EB-472D-93EF-ECEF85956D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F399ED64-C1EB-472D-93EF-ECEF85956D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F399ED64-C1EB-472D-93EF-ECEF85956D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F399ED64-C1EB-472D-93EF-ECEF85956D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330CD5CD-2E1C-4BD6-8F2A-6C4CB60739D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330CD5CD-2E1C-4BD6-8F2A-6C4CB60739D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330CD5CD-2E1C-4BD6-8F2A-6C4CB60739D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330CD5CD-2E1C-4BD6-8F2A-6C4CB60739D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
