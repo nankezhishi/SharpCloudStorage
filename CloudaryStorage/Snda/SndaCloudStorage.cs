@@ -140,7 +140,8 @@
 
         private HttpWebResponse MakeBucketRequest(string path, string method, Stream content = null)
         {
-            var datestring = DateTime.Now.ToUniversalTime().ToString("r");
+            var date = DateTime.Now;
+            var datestring = date.ToUniversalTime().ToString("r");
 
             var canonicalizedSNDAHeaders = String.Empty;
             var stringToSign =
@@ -156,7 +157,7 @@
 
             var request = WebRequest.Create(BaseUrl + path) as HttpWebRequest;
             request.Headers.Add("Authorization", authorization);
-            request.Date = DateTime.Now;
+            request.Date = date;
             request.Method = method;
             if (content != null)
             {
@@ -189,7 +190,7 @@
                 stream.CopyTo(cacheStream);
                 cacheStream.Seek(0, SeekOrigin.Begin);
 #else
-                cacheStream = stream;
+                var cacheStream = stream;
 #endif
 
                 var serializer = new XmlSerializer(typeof(T));
